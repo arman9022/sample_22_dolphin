@@ -7,18 +7,91 @@
     <title>Dolphin</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-</head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+  </head>
 <body>
-    <section id="signUpSignIn">
+    <section id="signUpSignIn" class="py-1">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-2">
+        <div class="row justify-content-between">
+          <div class="col-4">
             <h6>Help & Contact</h6>
           </div>
-          <div class="col-lg-4">
-            <h6>Help & Contact</h6>
-            <h6>Help & Contact</h6>
+          <div class="col-2">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Sgin Up
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content" style="background:transparent;border: none;">
+                  <div class="modal-body">
+                    <div class="container">
+                      <div class="row text-secondary">
+
+                        <div class="col-5 rounded" style="background: #005EB8;z-index: 6000;">
+                          <div class="row pt-5">
+                            <span style="color: #FBFF47;font-size: 30px;font-weight: 800;line-height: 36px;font-family: var(--lato);">Help & Contact</span>
+                            <span class="pt-3" style="color: var(--white);font-size: 1rem;font-weight: 700;line-height: 22px;font-family: var(--lato);">Fill up the form  and our team will get back to you withing 24 hours.</span>
+                          </div>
+                          <div class="row">
+                            <span class="pt-5" style="color: var(--white);font-size: 1rem;font-weight: 700;line-height: 22px;font-family: var(--lato);">+8801912377605</span>
+                          </div>
+                          <div class="row">
+                            <span class="pt-5" style="color: var(--white);font-size: 1rem;font-weight: 700;line-height: 22px;font-family: var(--lato);">dolphinenterprisebd @gmail.com</span>
+                          </div>
+                          <div class="row">
+                            <span class="pt-5" style="color: var(--white);font-size: 1rem;font-weight: 700;line-height: 22px;font-family: var(--lato);">39/1 Tootpara Central Road, Khulna</span>
+                          </div>
+                          <div class="row justify-content-around py-5 text-center">
+                            <div class="col-3">
+                              <i class="fa-brands fa-facebook text-light fs-3"></i>
+                            </div>
+                            <div class="col-3">
+                              <i class="fa-brands fa-youtube text-light fs-3"></i>
+                            </div>
+                            <div class="col-3">
+                              <i class="fa-brands fa-twitter text-light fs-3"></i>
+                            </div>
+                            <div class="col-3">
+                              <i class="fa-brands fa-instagram text-light fs-3"></i>
+                            </div>
+                          </div>
+                        </div>
+                        
+                        <div class="col-7 rounded-end" style="background: #FBFF47; margin-left:-10px;">
+                          <div class="row justify-content-end p-3">
+                            <div class="col-1"><button type="button" class="btn-close bg-secondary rounded-circle text-warning p-2" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                            <div class="row pt-5">
+                              <form>
+                                <div class="row mb-3">
+                                  <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                                  <div class="col-sm-10">
+                                    <input type="email" class="form-control" id="inputEmail3">
+                                  </div>
+                                </div>
+                                <div class="row mb-3">
+                                  <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                                  <div class="col-sm-10">
+                                    <input type="password" class="form-control" id="inputPassword3">
+                                  </div>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Sign in</button>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+  
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
+
         </div>
       </div>
     </section>
