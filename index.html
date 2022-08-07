@@ -16,15 +16,21 @@
     <section id="signUpSignIn" class="py-1">
       <div class="container">
         <div class="row justify-content-between">
-          <div class="col-4">
+          <div class="col-lg-2 col-md-3 col-5">
             <h6>Help & Contact</h6>
           </div>
-          <div class="col-2">
+          <div class="col-lg-3 col-md-4 col-6">
             <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-              Sgin Up
+            <button type="button" class="btn" style="background: #0071DC; border: 3px solid var(--white); color: var(--white);" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Sign Up
             </button>
-            <!-- Modal -->
+            <button type="button" class="btn" style="background: var(--white); border: 3px solid var(--blue); color: var(--blue);" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+              Sign in
+            </button>
+            <!-- <button type="button" class="btn" style="background: var(--white); border: 3px solid var(--blue); color: var(--blue);" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">
+              Sign help
+            </button> -->
+            <!-- Modal help -->
             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
               <div class="modal-dialog modal-lg">
                 <div class="modal-content" style="background:transparent;border: none;">
@@ -64,7 +70,7 @@
                         
                         <div class="col-7 rounded-end" style="background: #FBFF47; margin-left:-10px;">
                           <div class="row justify-content-end p-3">
-                            <div class="col-1"><button type="button" class="btn-close bg-secondary rounded-circle text-warning p-2" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                            <button type="button" class="btn-close bg-secondary rounded-circle text-warning p-2" data-bs-dismiss="modal" aria-label="Close"></button>
                             <div class="row pt-5">
                               <form>
                                 <div class="row mb-3">
@@ -91,11 +97,109 @@
                 </div>
               </div>
             </div>
+
+            <!-- Modal sign in -->
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content" style="background:transparent;border: none;">
+                  <div class="modal-body">
+                    <div class="container">
+                      <div class="row text-secondary">
+
+                        <div class="col-5 rounded" style="background: #005EB8;z-index: 6000;">
+
+                          <div style="display: flex; justify-content: center;align-items: center; width: 100%; height: 100%;">
+                            <div class="text-center">
+                              <img src="assets/images/Logo.png" style="width: 120px; height: 100px;"> <br>
+                              <span style="color: var(--white);font-size: 1.5rem;font-weight: 800;">Dolphin Enterprise</span>
+                            </div>
+                          </div>
+                        </div>
+                        
+                        <div class="col-7 rounded-end" style="background: #FBFF47; margin-left:-10px;">
+                          <div class="row justify-content-end p-3">
+                            <button type="button" class="btn-close bg-secondary rounded-circle text-warning p-2" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <div class="row pt-5">
+                              <form>
+                                <div class="row mb-3">
+                                  <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                                  <div class="col-sm-10">
+                                    <input type="email" class="form-control" id="inputEmail3">
+                                  </div>
+                                </div>
+                                <div class="row mb-3">
+                                  <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                                  <div class="col-sm-10">
+                                    <input type="password" class="form-control" id="inputPassword3">
+                                  </div>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Sign in</button>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+  
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Modal sign in -->
+            <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content" style="background:transparent;border: none;">
+                  <div class="modal-body">
+                    <div class="container">
+                      <div class="row text-secondary">
+
+                        <div class="col-5 rounded" style="background: #005EB8;z-index: 6000;">
+
+                          <div style="display: flex; justify-content: center;align-items: center; width: 100%; height: 100%;">
+                            <div class="text-center">
+                              <img src="assets/images/Logo.png" style="width: 120px; height: 100px;"> <br>
+                              <span style="color: var(--white);font-size: 1.5rem;font-weight: 800;">Dolphin Enterprise SSS</span>
+                            </div>
+                          </div>
+                        </div>
+                        
+                        <div class="col-7 rounded-end" style="background: #FBFF47; margin-left:-10px;">
+                          <div class="row justify-content-end p-3">
+                            <button type="button" class="btn-close bg-secondary rounded-circle text-warning p-2" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <div class="row pt-5">
+                              <form>
+                                <div class="row mb-3">
+                                  <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                                  <div class="col-sm-10">
+                                    <input type="email" class="form-control" id="inputEmail3">
+                                  </div>
+                                </div>
+                                <div class="row mb-3">
+                                  <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                                  <div class="col-sm-10">
+                                    <input type="password" class="form-control" id="inputPassword3">
+                                  </div>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Sign in</button>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+  
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
 
         </div>
       </div>
     </section>
+    
     <section id="logoSearchCart">
       <div class="container">
         <nav class="navbar navbar-expand-lg navbar-dark">
@@ -152,7 +256,9 @@
             </div>
         </nav>
     </section>
-    <section id="hero"></section>
+    <section id="hero">
+      <img src="assets/images/Hero/Rectangle 163.jpg" class="img-fluid">
+    </section>
     <section class="titleBackground">
       <span class="groupTitle">Categories</span>
     </section>
