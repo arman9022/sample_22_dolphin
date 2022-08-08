@@ -17,21 +17,26 @@
       <div class="container">
         <div class="row justify-content-between">
           <div class="col-lg-2 col-md-3 col-5">
-            <h6>Help & Contact</h6>
+            <h6></h6>
+            <button type="button" style="background: transparent; border: none; color: var(--white);" data-bs-toggle="modal" data-bs-target="#help">
+              Help & Contact
+            </button>
           </div>
           <div class="col-lg-3 col-md-4 col-6">
             <!-- Button trigger modal -->
-            <button type="button" class="btn" style="background: #0071DC; border: 3px solid var(--white); color: var(--white);" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <button type="button" class="btn" style="background: var(--blue); border: 3px solid var(--white); color: var(--white);" data-bs-toggle="modal" data-bs-target="#signup">
               Sign Up
             </button>
-            <button type="button" class="btn" style="background: var(--white); border: 3px solid var(--blue); color: var(--blue);" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            <button type="button" class="btn" style="background: var(--white); border: 3px solid var(--blue); color: var(--blue);" data-bs-toggle="modal" data-bs-target="#signin">
               Sign in
             </button>
             <!-- <button type="button" class="btn" style="background: var(--white); border: 3px solid var(--blue); color: var(--blue);" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">
               Sign help
             </button> -->
+
+
             <!-- Modal help -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal fade" id="help" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
               <div class="modal-dialog modal-lg">
                 <div class="modal-content" style="background:transparent;border: none;">
                   <div class="modal-body">
@@ -74,18 +79,32 @@
                             <div class="row pt-5">
                               <form>
                                 <div class="row mb-3">
-                                  <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
-                                  <div class="col-sm-10">
-                                    <input type="email" class="form-control" id="inputEmail3">
+                                  <label for="inputEmail3" class="col-sm-4 col-form-label" style="color: var(--black); font-weight: bold;">Name*</label>
+                                  <div class="col-sm-8">
+                                    <input type="text" class="form-control" id="inputEmail3" required>
                                   </div>
                                 </div>
                                 <div class="row mb-3">
-                                  <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
-                                  <div class="col-sm-10">
-                                    <input type="password" class="form-control" id="inputPassword3">
+                                  <label for="inputPassword3" class="col-sm-4 col-form-label" style="color: var(--black); font-weight: bold;">Mobile*</label>
+                                  <div class="col-sm-8">
+                                    <input type="text" class="form-control" id="inputPassword3" required>
                                   </div>
                                 </div>
-                                <button type="submit" class="btn btn-primary">Sign in</button>
+                                <div class="row mb-3">
+                                  <label for="inputPassword3" class="col-sm-4 col-form-label" style="color: var(--black); font-weight: bold;">Email</label>
+                                  <div class="col-sm-8">
+                                    <input type="email" class="form-control" id="inputPassword3">
+                                  </div>
+                                </div>
+                                <div class="row mb-3">
+                                  <label for="comments1" class="col-sm-4 col-form-label" style="color: var(--black); font-weight: bold;">Comments*</label>
+                                  <div class="col-sm-8">
+                                    <textarea class="form-control" id="floatingTextarea2" style="height: 100px" required></textarea>
+                                  </div>
+                                </div>
+                                <div class="row d-flex justify-content-center">
+                                  <button type="submit" class="btn btn-primary" style="width: 50%;">Send Message</button>
+                                </div>
                               </form>
                             </div>
                           </div>
@@ -98,8 +117,9 @@
               </div>
             </div>
 
-            <!-- Modal sign in -->
-            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <!-- Modal sign up -->
+
+            <!-- <div class="modal fade" id="signup" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
               <div class="modal-dialog modal-lg">
                 <div class="modal-content" style="background:transparent;border: none;">
                   <div class="modal-body">
@@ -144,49 +164,124 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </div> -->
 
-            <!-- Modal sign in -->
-            <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal fade" id="signup" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
               <div class="modal-dialog modal-lg">
                 <div class="modal-content" style="background:transparent;border: none;">
                   <div class="modal-body">
                     <div class="container">
                       <div class="row text-secondary">
-
                         <div class="col-5 rounded" style="background: #005EB8;z-index: 6000;">
-
                           <div style="display: flex; justify-content: center;align-items: center; width: 100%; height: 100%;">
                             <div class="text-center">
-                              <img src="assets/images/Logo.png" style="width: 120px; height: 100px;"> <br>
-                              <span style="color: var(--white);font-size: 1.5rem;font-weight: 800;">Dolphin Enterprise SSS</span>
+                              <img src="assets/images/Logo.png" style="width: 90px; height: 90px;"> <br>
+                              <span style="color: var(--white);font-size: 1.5rem;font-weight: 800;">Dolphin Enterprise</span>
                             </div>
                           </div>
                         </div>
-                        
-                        <div class="col-7 rounded-end" style="background: #FBFF47; margin-left:-10px;">
+                        <div class="col-7 rounded-end" style="background: #FBFF47; margin-left:-10px; overflow: hidden;">
                           <div class="row justify-content-end p-3">
                             <button type="button" class="btn-close bg-secondary rounded-circle text-warning p-2" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <div class="row d-inline">
+                              <span class="py-2" style="color: var(--white);font-weight: 900;font-size: 1.5rem;border-bottom: 5px solid var(--blue);background: var(--blue); border-radius: .3rem;">Sign Up</span>
+                              <span class="py-2" style="color: var(--black);font-weight: 900;font-size: 1.5rem;border-bottom: 5px solid var(--blue); margin-left: -7px;">Log In</span>
+                            </div>
                             <div class="row pt-5">
                               <form>
-                                <div class="row mb-3">
-                                  <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
-                                  <div class="col-sm-10">
-                                    <input type="email" class="form-control" id="inputEmail3">
-                                  </div>
+                                <div class="mb-3">
+                                  <label for="validationDefault01" class="form-label" style="color: var(--black); font-weight: bold;">Email*</label>
+                                  <input type="email" class="form-control" id="validationDefault01" aria-describedby="emailHelp" required>
                                 </div>
-                                <div class="row mb-3">
-                                  <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
-                                  <div class="col-sm-10">
-                                    <input type="password" class="form-control" id="inputPassword3">
-                                  </div>
+                                <div class="mb-3">
+                                  <label for="validationDefault02" class="form-label" style="color: var(--black); font-weight: bold;">Password*</label>
+                                  <input type="password" class="form-control" id="validationDefault02" required>
                                 </div>
-                                <button type="submit" class="btn btn-primary">Sign in</button>
+                                <div class="mb-3">
+                                  <label for="validationDefault03" class="form-label" style="color: var(--black); font-weight: bold;">Confirm Password*</label>
+                                  <input type="password" class="form-control" id="validationDefault03" required>
+                                </div>
+                                <div class="mb-3 form-check">
+                                  <input type="checkbox" class="form-check-input" id="validationDefault04">
+                                  <label class="form-check-label" for="validationDefault04">I agree all the</label> <label class="form-check-label"> <a href="" class="fw-bold text-secondary">Term & Privacy Policy</a> </label>
+                                </div>
+                                <div class="row">
+                                  <button type="submit" class="btn btn-primary" style="width: 85%;margin: auto;">Submit</button>
+                                </div>
+                                 <br>
+                                <label class="form-check-label" for="validationDefault04">Already have an account?</label> <label class="form-check-label"> 
+                                  <!-- <a href="" class="fw-bold text-secondary">Log in</a>  -->
+                                  <button type="button" style="background: none; border: none; color: var(--black); font-weight: bold;" data-bs-toggle="modal" data-bs-target="#signin">
+                                    Log in
+                                  </button>
+                                </label>
                               </form>
                             </div>
                           </div>
+                          <div class="row justify-content-end">
+                            <div class="aaa rounded-circle" style="background: #0071DC; width:188px; height: 188px; margin-bottom: -10%; margin-right: -10%;"></div>
+                          </div>
                         </div>
-  
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Modal sign in -->
+            <div class="modal fade" id="signin" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content" style="background:transparent;border: none;">
+                  <div class="modal-body">
+                    <div class="container">
+                      <div class="row text-secondary">
+                        <div class="col-5 rounded" style="background: #005EB8;z-index: 6000;">
+                          <div style="display: flex; justify-content: center;align-items: center; width: 100%; height: 100%;">
+                            <div class="text-center">
+                              <img src="assets/images/Logo.png" style="width: 90px; height: 90px;"> <br>
+                              <span style="color: var(--white);font-size: 1.5rem;font-weight: 800;">Dolphin Enterprise</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-7 rounded-end" style="background: #FBFF47; margin-left:-10px; overflow: hidden;">
+                          <div class="row justify-content-end p-3">
+                            <button type="button" class="btn-close bg-secondary rounded-circle text-warning p-2" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <div class="row d-inline">
+                              <span class="py-2" style="color: var(--black);font-weight: 900;font-size: 1.5rem;border-bottom: 5px solid var(--blue);">Sign Up</span>
+                              <span class="py-2" style="color: var(--white);font-weight: 900;font-size: 1.5rem;border-bottom: 5px solid var(--blue);background: var(--blue); border-radius: .3rem; margin-left: -7px;">Log In</span>
+                            </div>
+                            <div class="row pt-5">
+                              <form>
+                                <div class="mb-3">
+                                  <label for="validationDefault01" class="form-label" style="color: var(--black); font-weight: bold;">Email*</label>
+                                  <input type="email" class="form-control" id="validationDefault01" aria-describedby="emailHelp" required>
+                                </div>
+                                <div class="mb-3">
+                                  <label for="validationDefault02" class="form-label" style="color: var(--black); font-weight: bold;">Password*</label>
+                                  <input type="password" class="form-control" id="validationDefault02" required>
+                                </div>
+                                <div class="mb-3 form-check">
+                                  <input type="checkbox" class="form-check-input" id="validationDefault03">
+                                  <label class="form-check-label" for="validationDefault03">Remember me</label> <label class="form-check-label"> <a href="" class="fw-bold text-secondary">Reset Password?</a> </label>
+                                </div>
+                                <div class="row">
+                                  <button type="submit" class="btn btn-primary" style="width: 85%;margin: auto;">Submit</button>
+                                </div>
+                                 <br>
+                                <label class="form-check-label" for="validationDefault04">Don’t have an account?</label> <label class="form-check-label"> 
+                                  <!-- <a href="" class="fw-bold text-secondary">Sign up</a>  -->
+                                  <button type="button" style="background: none; border: none; color: var(--black); font-weight: bold;" data-bs-toggle="modal" data-bs-target="#signup">
+                                    Sign Up
+                                  </button>
+                                </label>
+                              </form>
+                            </div>
+                          </div>
+                          <div class="row justify-content-end">
+                            <div class="aaa rounded-circle" style="background: #0071DC; width:188px; height: 188px; margin-bottom: -10%; margin-right: -10%;"></div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
