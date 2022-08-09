@@ -5,6 +5,7 @@
     --offwhite: #F5F5F5;
     --white: #FFFFFF;
     --black: #000000;
+    --yellow: #FBFF47;
     --lato: 'Lato', sans-serif;
 }
 
@@ -19,20 +20,17 @@
 #menu{
     background: var(--offwhite);
 }
-#hero{}
+
 .titleBackground{
     background: var(--white);
 }
-#categories{
+#categories, #topChoice, #popularProducts, #featured, #contact {
     background: var(--offwhite);
 }
-#topChoice{}
-#popularProducts{}
-#featured{}
-#contact{}
+
+
 
 .titleBackground{background: var(--white);}
-.contentBackground{background: var(--offwhite);}
 
 .groupTitle{
     font-size: 1.5rem;
@@ -52,3 +50,23 @@
     font-family: var(--lato);
 }
 
+.nav-link {
+    padding: var(--bs-nav-link-padding-y) 2rem !important;
+    font-size: var(--bs-nav-link-font-size);
+    font-weight: 700 !important;
+    color: var(--bs-nav-link-color);
+    text-decoration: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+
+@media only screen and (max-width: 576px) {
+    .footerMiddle{
+        margin: auto !important;
+    }
+    .circleDesign{
+        margin-bottom: -30% !important; 
+        margin-right: -30% !important;
+    }
+    .formTitle{font-size: .8rem !important;}
+
+}
